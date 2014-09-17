@@ -9,13 +9,12 @@ namespace AngularFor.NetDev.Controllers
 {
     public class RegistrationsController : Controller
     {
-        private RegistrationVmBuilder registrationVmBuilder = new RegistrationVmBuilder();
         //
         // GET: /Registrations/
 
         public ActionResult Index()
         {
-            return View(this.registrationVmBuilder.BuildRegistrationVm());
+            return View();
         }
 
     }

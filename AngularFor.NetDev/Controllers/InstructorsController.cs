@@ -7,7 +7,7 @@ using AngularFor.NetDev.Models.Registrations;
 
 namespace AngularFor.NetDev.Controllers
 {
-    public class InstructorsController : Controller
+    public class InstructorsController : JsonController
     {
         private RegistrationVmBuilder registrationVmBuilder = new RegistrationVmBuilder();
         //
@@ -15,7 +15,7 @@ namespace AngularFor.NetDev.Controllers
 
         public ActionResult Index()
         {
-            return View((object)this.registrationVmBuilder.GetSerializeInstructorVms());
+            return Json(this.registrationVmBuilder.GetInstructorVms(), JsonRequestBehavior.AllowGet);
         }
 
     }

@@ -10,7 +10,7 @@ using Newtonsoft.Json.Serialization;
 
 namespace AngularFor.NetDev.Controllers
 {
-    public class CoursesController : Controller
+    public class CoursesController : JsonController
     {
         private  RegistrationVmBuilder registrationVmBuilder = new RegistrationVmBuilder();
 
@@ -18,7 +18,7 @@ namespace AngularFor.NetDev.Controllers
         // GET: /Courses/
         public ActionResult Index()
         {
-            return View((object)this.registrationVmBuilder.GetSerializeCourseVms());
+            return Json(this.registrationVmBuilder.GetCourseVms(), JsonRequestBehavior.AllowGet);
         }        
     }  
 }

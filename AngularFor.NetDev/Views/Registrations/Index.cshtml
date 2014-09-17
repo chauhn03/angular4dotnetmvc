@@ -1,5 +1,4 @@
-﻿@model AngularFor.NetDev.Models.Registrations.RegistrationVm
-@{
+﻿@{
     ViewBag.Title = "Index";
 }
 
@@ -8,16 +7,8 @@
 
     <script src="~/Scripts/Courses/courses-controller.js"></script>
     <script src="~/Scripts/Instructors/instructors-controller.js"></script>
-    <script type="text/javascript">
-        registrationModule.factory('bootstrappedData', function() {
-            return {
-                courses: @Html.Raw(Model.Courses),
-                instructors: @Html.Raw(Model.Instructors)
-            };
-        });
-
-        console.log(@Html.Raw(Model.Instructors));
-    </script>
+    <script src="~/Scripts/Courses/courses-repository.js"></script>
+    <script src="~/Scripts/Instructors/instructors-repository.js"></script>
 }
 
 <div class="container">
@@ -39,6 +30,11 @@
                     <li>
                         <a href="/Registrations/Instructors">Browse Instructors</a>
                     </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <liv>
+                        <a href="/Registrations/CreateAccounts">Create Account</a>
+                    </liv>
                 </ul>
             </div>
         </div>
