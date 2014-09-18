@@ -127,6 +127,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\InstructorsController.cs" />
     <Compile Include="Controllers\JsonController.cs" />
@@ -134,6 +135,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Accounts\StudentVm.cs" />
     <Compile Include="Models\Courses\CoursesVm.cs" />
     <Compile Include="Models\Instructors\InstructorsVm.cs" />
     <Compile Include="Models\Registrations\RegistrationVm.cs" />
@@ -208,6 +210,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap\bootstrap.css.map" />
+    <Content Include="Scripts\Account\account-controller.js" />
+    <Content Include="Scripts\Account\account-repository.js" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.js" />
@@ -240,6 +244,7 @@
     <Content Include="Scripts\registration-module.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="template\courses.html" />
+    <Content Include="template\create-account.html" />
     <Content Include="template\instructors.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
