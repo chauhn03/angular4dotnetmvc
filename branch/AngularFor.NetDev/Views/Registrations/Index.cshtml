@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@section JavascriptInHead
+{
+
+    <script src="~/Scripts/Courses/courses-controller.js"></script>
+    <script src="~/Scripts/Instructors/instructors-controller.js"></script>
+    <script src="~/Scripts/Account/account-controller.js"></script>
+    <script src="~/Scripts/Courses/courses-repository.js"></script>
+    <script src="~/Scripts/Instructors/instructors-repository.js"></script>    
+    <script src="~/Scripts/Account/account-repository.js"></script>
+    <script type="text/javascript">
+        function test(parameters) {
+            alert('aa');
+        }
+    </script>
+}
+
+<div class="container">
+    <div class="row">
+        <div class="navbar navbar-default">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <span class="navbar-brand">Registration</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/Registrations/Courses">Browse Catalog</a>
+                    </li>
+                    <li>
+                        <a href="/Registrations/Instructors">Browse Instructors</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/Registrations/CreateAccount">Create Account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div ng-view></div>
+</div>
