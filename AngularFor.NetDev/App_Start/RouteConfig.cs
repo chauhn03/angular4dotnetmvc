@@ -13,11 +13,11 @@ namespace AngularFor.NetDev
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "Registration SPA",
-                url: "Registrations/{*catchall}",
-                defaults: new { controller = "Registrations", action = "Index" }
-                );
+            //routes.MapRoute(
+            //    name: "Registration SPA",
+            //    url: "Registrations/{*catchall}",
+            //    defaults: new { controller = "Registrations", action = "Index" }
+            //    );
 
             routes.MapRoute(
                 name: "Default",
