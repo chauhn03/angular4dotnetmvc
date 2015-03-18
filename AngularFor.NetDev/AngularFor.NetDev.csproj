@@ -224,7 +224,6 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Courses\courses-controller.js" />
-    <Content Include="Scripts\Courses\courses-repository.js" />
     <Content Include="Scripts\Instructors\instructors-controller.js" />
     <Content Include="Scripts\Instructors\instructors-repository.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
