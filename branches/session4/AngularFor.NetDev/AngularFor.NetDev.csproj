@@ -131,7 +131,6 @@
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\InstructorsController.cs" />
     <Compile Include="Controllers\JsonController.cs" />
-    <Compile Include="Controllers\RegistrationsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -211,6 +210,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap\bootstrap.css.map" />
+    <Content Include="index.html" />
     <Content Include="Scripts\Account\account-controller.js" />
     <Content Include="Scripts\Account\account-repository.js" />
     <Content Include="Scripts\angular-route.js" />
@@ -224,6 +224,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Courses\courses-controller.js" />
+    <Content Include="Scripts\Courses\courses-repository.js" />
     <Content Include="Scripts\Instructors\instructors-controller.js" />
     <Content Include="Scripts\Instructors\instructors-repository.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
@@ -253,16 +254,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Registrations\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Courses\" />
-    <Folder Include="Views\Instructors\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
