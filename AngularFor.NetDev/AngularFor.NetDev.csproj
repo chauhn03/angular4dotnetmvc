@@ -137,8 +137,9 @@
     </Compile>
     <Compile Include="Models\Accounts\StudentVm.cs" />
     <Compile Include="Models\Courses\CoursesVm.cs" />
-    <Compile Include="Models\Instructors\InstructorsVm.cs" />
-    <Compile Include="Models\Registrations\RegistrationVm.cs" />
+    <Compile Include="Models\Instructors\InstructorsVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Models\Registrations\RegistrationVmBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

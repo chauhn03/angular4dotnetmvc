@@ -21,7 +21,7 @@ namespace AngularFor.NetDev.Controllers
         [HttpPost]
         public ActionResult Save(StudentVm studentVm)
         {
-            return new HttpStatusCodeResult(HttpStatusCode.InternalServerError);
+            return new HttpStatusCodeResult(HttpStatusCode.OK);
         }
 
     }
