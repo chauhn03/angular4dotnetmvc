@@ -1,5 +1,3 @@
-﻿registrationModule.controller("CoursesController", function ($scope, coursesRepository) {
-    coursesRepository.get().then(function(courses) {
-        $scope.courses = courses;
-    });
+﻿registrationModule.controller("CoursesController", function ($scope, coursesRepository) {    
+    $scope.courses = coursesRepository.get();
 });

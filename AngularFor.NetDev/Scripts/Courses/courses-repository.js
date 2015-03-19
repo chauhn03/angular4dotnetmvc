@@ -1,9 +1,7 @@
-﻿registrationModule.factory('coursesRepository', function($http, $q) {
+﻿registrationModule.factory('coursesRepository', function($resource) {    
     return {
-        get: function() {
-            var deferred = $q.defer();
-            $http.get('/api/Courses').success(deferred.resolve).error(deferred.reject);
-            return deferred.promise;
+        get: function() {            
+            return $resource('/api/Courses').query();            
         }
     };
 });
