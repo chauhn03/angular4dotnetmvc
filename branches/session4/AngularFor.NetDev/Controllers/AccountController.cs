@@ -16,7 +16,7 @@ namespace AngularFor.NetDev.Controllers
         // GET: /Account/              
         public HttpResponseMessage Save(StudentVm studentVm)
         {
-            return new HttpResponseMessage(HttpStatusCode.InternalServerError);
+            return new HttpResponseMessage(HttpStatusCode.OK);
         }
 
     }
