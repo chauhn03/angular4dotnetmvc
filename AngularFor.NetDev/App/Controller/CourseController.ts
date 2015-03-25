@@ -16,8 +16,9 @@
 
         constructor(private $scope: ICourseScope, private courseService: DemoModule.Services.CourseService, private $location: ng.ILocationService) {
             $scope.viewModel = this;
-            alert('Course Controller');
+            //alert('Course Controller');
             this.courses = courseService.get();
+            
         }     
     }
 } 
